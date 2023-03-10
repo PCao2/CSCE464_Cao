@@ -1,0 +1,19 @@
+<!-- mainmenu_row.html -->
+  <nav onmouseout="hide()">
+    <ul class="Links">
+      <li><a href="index.html" onmouseover="show('m1')">Home</a></li>
+      <li>
+        <span onmouseover="show('m3')">Additional Pages</span> 
+        <div id="m3" onmouseover="show('m3')">
+          <a href="pages/funFacts.html">Some Fun Facts</a>
+          <a href="pages/movies.html">Peter's Movie Corner</a>
+          <a href="pages/feedbackForm.html">Website Feedback</a>
+        </div>
+      </li>
+      <li>
+        <input type="checkbox" id="darkMode" name="darkMode" onclick="darkmode()">
+        <label class="CheckboxLabel" for="darkMode">Dark Mode</label>
+      </li>
+    </ul>
+  </nav>
+
