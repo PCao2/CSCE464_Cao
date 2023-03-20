@@ -1,36 +1,79 @@
-<!--#include virtual="common/document_head.html"-->
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Peter's Website</title>
+    <base href="/">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/feedbackFormValidate.js"></script>
+    <script src="scripts/menus.js"></script>
+  </head>
+
+  <body id="body">
     <table>
-      <!--#include virtual="common/logo_row.html"-->
-      <!--#include virtual="common/mainmenu_row.html"-->
+      <!-- logo_row.html -->
+    <table>
+      <tr>
+        <td colspan="5">
+          <img src="images/Websiteheader.png"
+               alt="Peter's Website"
+               width="608"
+               height="90">
+        </td>
+      </tr>
+    </table>
+      <!-- mainmenu_row.html -->
+    <nav onmouseout="hide()">
+      <ul class="Links">
+        <li><a href="index.html" onmouseover="show('m1')">Home</a></li>
+        <li>
+          <span onmouseover="show('m3')">Additional Pages</span> 
+          <div id="m3" onmouseover="show('m3')">
+            <a href="pages/artGallery.html">Art Gallery</a>
+            <a href="pages/movies.html">Peter's Movie Corner</a>
+            <a href="pages/feedbackForm.html">Website Feedback</a>
+          </div>
+        </li>
+        <li>
+          <input type="checkbox" id="darkMode" name="darkMode" onclick="darkmode()">
+          <label class="CheckboxLabel" for="darkMode">Dark Mode</label>
+        </li>
+      </ul>
+    </nav>
+
+
       <tr>
         <td colspan="3">
           <h3>Welcome to Peter's Website</h3>
-          <p>I'm a huge fan of web development!</p>
+          <h2>I'm a huge fan of web development!</p>
         </td>
       </tr>
     </table>
     <div class="flex-horizontal">
       <div class="flex-vertical">
         <div>
-          <p><b>THIS IS A First FLEX BOX</b></p>
+          <p><b>This is my personal website, featuring:</b></p>
           <ul>
-            <li>FUN (With a margin of 100px on top)</li>
-            <li>COOL (With a green border around the flex container)</li>
-            <li>GOOD AT WEB DEVELOPMENT</li>
+            <li>Fun Facts about ME!</li>
+            <li>Some Movie Reviews</li>
+            <li>A website feedback form!</li>
           </ul>
         </div>
-        <div>
-          <textarea> Type something here! </textarea>
-        </div>
+        <p></p>
+        <p> How would you rate my website? </p>
         <div>
           <select>
-            <option> Option 1</option>
-            <option> Option 1 (again)</option>
-            <option> Option 1 (a third time)</option>
+            <option> Good </option>
+            <option> Amazing! </option>
+            <option> INCREDIBLE! </option>
           </select>
         </div>
       </div>
+      <img src="images/chibirobo/ChibiRobo.png"
+           alt="Chibi-Robo"
+           height="200px"
+           width="200px">
     </div>
   </body>
 </html>

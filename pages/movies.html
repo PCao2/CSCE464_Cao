@@ -1,16 +1,71 @@
-<!--#include virtual="../common/document_head.html"-->
-<!-- about.html -->
+<!DOCTYPE html>
+<!-- document_head.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Peter's Website</title>
+    <base href="/">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/feedbackFormValidate.js"></script>
+    <script src="scripts/menus.js"></script>
+  </head>
+
 <body id="body">
   <table>
-    <!--#include virtual="../common/logo_row.html"-->
-    <!--#include virtual="../common/mainmenu_row.html"-->
+    <!-- logo_row.html -->
+    <table>
+      <tr>
+        <td colspan="5">
+          <img src="../images/Websiteheader.png"
+               alt="Peter's Website"
+               width="608"
+               height="90">
+        </td>
+      </tr>
+    </table>
+    <!-- mainmenu_row.html -->
+  <nav onmouseout="hide()">
+    <ul class="Links">
+      <li><a href="index.html" onmouseover="show('m1')">Home</a></li>
+      <li>
+        <span onmouseover="show('m3')">Additional Pages</span> 
+        <div id="m3" onmouseover="show('m3')">
+          <a href="pages/artGallery.html">Art Gallery</a>
+          <a href="pages/movies.html">Peter's Movie Corner</a>
+          <a href="pages/feedbackForm.html">Website Feedback</a>
+        </div>
+      </li>
+      <li>
+        <input type="checkbox" id="darkMode" name="darkMode" onclick="darkmode()">
+        <label class="CheckboxLabel" for="darkMode">Dark Mode</label>
+      </li>
+    </ul>
+  </nav>
+
+
     <tr>
       <td colspan="4">
         <h3>Peter's Movie Reviews:</h3>
         <ol class="favorites">
-          <li>Your Name</li>
-          <li>Minari</li>
-          <li >Everything, Everywhere, All At Once</li>
+          <li>
+            <span></span>
+            <a>Your Name</a>
+            <img src="../images/your_name.jpg"
+               alt="Your Name">
+          </li>
+          <li>
+            <span></span>
+            <a>Minari</a>
+            <img src="../images/minari.jpg"
+               alt="Minari">
+          </li>
+          <li>
+            <span></span>
+            <a>Everything, Everywhere, All At Once</a>
+            <img src="../images/eeaao.jpg"
+               alt="Everything Everywhere All At Once">
+          </li>
         </ol>
         <p></p>
         <p>I've watched a lot of movies, but I'm too lazy to review them all!</p>

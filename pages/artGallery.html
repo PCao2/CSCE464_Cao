@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- document_head.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Peter's Website</title>
+    <base href="/">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/feedbackFormValidate.js"></script>
+    <script src="scripts/menus.js"></script>
+  </head>
+
+  <body id="body">
+    <table>
+      <!-- logo_row.html -->
+    <table>
+      <tr>
+        <td colspan="5">
+          <img src="images/Websiteheader.png"
+               alt="Peter's Website"
+               width="608"
+               height="90">
+        </td>
+      </tr>
+    </table>
+      <!-- mainmenu_row.html -->
+  <nav onmouseout="hide()">
+    <ul class="Links">
+      <li><a href="index.html" onmouseover="show('m1')">Home</a></li>
+      <li>
+        <span onmouseover="show('m3')">Additional Pages</span> 
+        <div id="m3" onmouseover="show('m3')">
+          <a href="pages/artGallery.html">Art Gallery</a>
+          <a href="pages/movies.html">Peter's Movie Corner</a>
+          <a href="pages/feedbackForm.html">Website Feedback</a>
+        </div>
+      </li>
+      <li>
+        <input type="checkbox" id="darkMode" name="darkMode" onclick="darkmode()">
+        <label class="CheckboxLabel" for="darkMode">Dark Mode</label>
+      </li>
+    </ul>
+  </nav>
+
+
+      <tr>
+        <td colspan="3">
+          <h3>Checkout all my art!</h3>
+          <h2>Yeah, graphic design is my passion</h2>
+        </td>
+      </tr>
+    </table>
+    <div class="flex-horizontal">
+      <img src="images/ChibiRobo.png"
+           alt="Chibi-Robo"
+           height="200px"
+           width="200px">
+      <img src="images/chibirobo/angery robo.png"
+           alt="Chibi-Robo"
+           height="200px"
+           width="200px">
+      <img src="images/chibirobo/ChibiFury.png"
+           alt="Chibi-Robo"
+           height="200px"
+           width="200px">
+      <img src="images/chibirobo/ChibiKetchum.png"
+           alt="Chibi-Robo"
+           height="200px"
+           width="200px">
+      <img src="images/chibirobo/GratefulRobo.png"
+           alt="Chibi-Robo"
+           height="200px"
+           width="200px">
+      <img src="images/chibirobo/SussyRobo.png"
+           alt="Chibi-Robo"
+           height="200px"
+           width="200px">
+      <img src="images/chibirobo/worried robo.png"
+           alt="Chibi-Robo"
+           height="200px"
+           width="200px">
+      <img src="images/chibirobo/PirateRobo.png"
+           alt="Chibi-Robo"
+           height="200px"
+           width="200px">
+    </div>
+  </body>
+</html>
